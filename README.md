@@ -1,4 +1,4 @@
-# Starter Alpinejs
+# Starter AlpineJS
 
 Starter boilerplate for AlpineJS projects.
 
