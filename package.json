@@ -1,5 +1,6 @@
 {
 	"name": "@mkfizi/starter-alpinejs",
+	"type": "module",
 	"version": "0.1.0",
 	"description": "Starter boilerplate for AlpineJS projects.",
 	"keywords": [
