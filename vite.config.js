@@ -1,9 +1,13 @@
 import { glob } from 'glob';
 import { resolve, relative } from 'path';
 
+/**
+ * Output path to accomodate deployment on Github Pages using 'docs` branch.
+ * Update 'prebuild' script in `package.json if this value is changed 
+ */
 const outputPath = '../docs';
 
-module.exports = {
+export default {
     base: './',
     root: 'src',
     build: {

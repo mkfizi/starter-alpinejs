@@ -13,7 +13,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"prebuild": "rm -rf docs || rmdir /s /q docs",
+		"build": "npm run prebuild && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
