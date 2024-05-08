@@ -11,8 +11,7 @@ This project utilize [Vite](https://vitejs.dev/) for source code bundling. By de
 
 ## Features
 
--Dark mode toggle: Users can switch between light and dark modes for better readability and preference.
-
+-   Dark mode toggle: Users can switch between light and dark modes for better readability and preference.
 -   [Viewport height mobile browser issue](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) fix: Ensures consistent rendering of elements using the `vh` unit across different mobile browsers.
 -   SEO-friendly metadata and social media tags: Includes relevant metadata and tags to optimize the website for search engines and improve social media sharing.
 
