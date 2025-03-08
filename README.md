@@ -1,32 +1,18 @@
 # Starter AlpineJS
+Boilerplate for AlpineJS and TailwindCSS projects.
 
-Starter boilerplate for AlpineJS projects.
-
-Tech stacks:
-
--   AlpineJS
--   TailwindCSS
-
-This project utilize [Vite](https://vitejs.dev/) for source code bundling. By default, source code path is `/src` and build path is `/docs`. These paths can be configured in `vite.config.js`.
-
-## Features
-
--   Dark mode toggle: Users can switch between light and dark modes for better readability and preference.
--   [Viewport height mobile browser issue](https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser) fix: Ensures consistent rendering of elements using the `vh` unit across different mobile browsers.
--   SEO-friendly metadata and social media tags: Includes relevant metadata and tags to optimize the website for search engines and improve social media sharing.
+## Usage
+This barebone boilerplate serves as starting point when developing web applications or sites. It eliminates the need for base configuration for AlpineJS and Tailwind. By default, this project is utilizing [Vite](https://vitejs.dev/) for source code bundling but can be switch to any bundling tools.
 
 ## Installation
-
 Clone this repository to get started.
 
-Execute the following command in project directory to install dependencies.
-
+Run the following command in project directory to install TailwindCSS dependencies.
 ```bash
 npm install
 ```
 
-To run Vite, execute one of the following commands:
-
+Run one of the following commands to execute, build or preview site using Vite server:
 ```bash
 npm run dev
 npm run build
