@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" x-data="app">
+<head>
+	<!-- Metadata -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#ffffff">
+	<!-- END Metadata -->
+
+	<!-- SEO -->
+	<meta name="title" content="Starter HTML">
+	<meta name="description" content="Boilerplate for AlpineJS and TailwindCSS projects.">
+	<meta name="robots" content="index, follow">
+	<!-- END SEO -->
+	
+	<!-- Facebook open graph -->
+	<meta property="og:url" content="https://mkfizi.dev">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Starter AlpineJS">
+	<meta property="og:image" content="path/to/img/meta-og.jpg">
+	<meta property="og:description" content="Boilerplate for AlpineJS and TailwindCSS projects.">
+	<meta property="og:site_name" content="Starter HTML">
+	<!-- END Facebook open graph -->
+
+	<!-- Twitter cards -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@mkfizi">
+	<meta name="twitter:creator" content="@mkfizi">
+	<meta name="twitter:url" content="https://mkfizi.dev">
+	<meta name="twitter:title" content="Starter HTML">
+	<meta name="twitter:description" content="Boilerplate for AlpineJS and TailwindCSS projects.">
+	<meta name="twitter:image" content="path/to/img/meta-card.jpg">
+	<!-- END Twitter cards -->
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- END Favicon -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./src/css/index.css">
+	<link rel="preload" href="./src/css/index.css" as="style">
+	<!-- END Styles -->
+
+	<!-- Scripts -->
+	<script src="./src/js/index.js" type="module" defer></script>
+	<link rel="preload" href="./src/js/index.js" as="script">
+	<!-- END Scripts -->
+		
+	<!-- Inline code to avoid FOUC -->
+    <script>
+        // Viewport height issue on mobile browsers fix
+        // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+        const setVH = () => document.documentElement.style.setProperty("--vh", innerHeight * 0.01 + "px");
+        addEventListener("resize", setVH);
+        setVH();
+    </script>
+     <!-- END Inline code to avoid FOUC -->
+
+	<title>Starter AlpineJS</title>
+</head>
+<body class="relative min-h-screen antialiased">
+	<!-- Content -->
+	<main>
+		<p>Hello world!</p>
+	</main>
+	<!-- END Content -->
+		
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="noindex">
+
+    <!-- Styles -->
+    <style>
+        @import 'tailwindcss';
+
+        /**
+        * Viewport height issue on mobile browsers fix.
+        * https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+        */
+        @theme {
+            --vh: 1vh;
+            --tw-h-screen: calc(var(--vh, 1vh) * 100);
+            --tw-min-h-screen: calc(var(--vh, 1vh) * 100);
+        }
+
+        .h-screen {
+            height: var(--tw-h-screen);
+        }
+
+        .min-h-screen {
+            min-height: var(--tw-min-h-screen);
+        }
+    </style>
+    <!-- END Styles -->
+
+    <!-- Inline code to avoid FOUC -->
+    <script>
+        // Viewport height issue on mobile browsers fix.
+        // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+        const setVH = () => document.documentElement.style.setProperty("--vh", innerHeight * 0.01 + "px");
+        addEventListener("resize", setVH);
+        setVH();
+    </script>
+     <!-- END Inline code to avoid FOUC -->
+
+    <title>Page Not Found</title>
+</head>
+<body>
+    <main>
+        <p>Page Not Found</p>
+    </main>
+</body>
+</html>

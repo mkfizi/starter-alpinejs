@@ -7,7 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and versioning adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Types of changes:
-
 -   `Added` for new features.
 -   `Changed` for changes in existing functionality.
 -   `Deprecated` for soon-to-be removed features.
@@ -19,8 +18,21 @@ Types of changes:
 
 Put unreleased changes here.
 
-## [0.1.0] - 2024-05-03
-
+## [0.2.0] - 2024-03-09
 ### Added
+- Include sample code in `index.js`.
 
--   First release.
+### Changed
+- Set site root folder from `./src` to `./`.
+- Upgrade TailwindCSS dependancy to 4.0.1.
+- Upgrade Vite dependancy to 6.2.1.
+- Simplify Vite config.
+- Rewrite content for more minimal setup.
+
+### Removed
+- TailwindCSS and PostCSS config.
+- Logo image files.
+
+## [0.1.0] - 2024-05-03
+### Added
+- First release.
