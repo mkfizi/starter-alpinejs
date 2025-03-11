@@ -11,7 +11,8 @@ import Alpine from 'alpinejs';
     app.alpine = () => {
         Alpine.data('app', () => ({
             init() {
-                console.log('Starter AlpineJS');
+                console.log(app.name);
+                console.log(app.version);
             } 
         }))
     };
