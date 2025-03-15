@@ -51,20 +51,10 @@
 		<link rel="preload" href="./src/js/index.js" as="script">
 		<script src="./src/js/index.js" type="module" defer></script>
 		<!-- END Scripts -->
-			
-		<!-- Inline code to avoid FOUC -->
-		<script>
-			// Viewport height issue on mobile browsers fix
-			// https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
-			const setVH = () => document.documentElement.style.setProperty("--vh", innerHeight * 0.01 + "px");
-			addEventListener("resize", setVH);
-			setVH();
-		</script>
-		<!-- END Inline code to avoid FOUC -->
 
 		<title>Starter AlpineJS</title>
 	</head>
-	<body class="relative min-h-screen antialiased">
+	<body class="relative min-h-dvh antialiased">
 		<!-- Content -->
 		<main>
 			<p>Starter AlpineJS</p>
