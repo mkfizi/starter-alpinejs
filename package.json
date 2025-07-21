@@ -17,9 +17,9 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "^4.0.10",
-		"alpinejs": "^3.13.10",
-		"tailwindcss": "^4.0.10",
-		"vite": "^6.2.1"
+		"@tailwindcss/vite": "^4.1.11",
+		"alpinejs": "^3.14.9",
+		"tailwindcss": "^4.1.11",
+		"vite": "^7.0.5"
 	}
 }
