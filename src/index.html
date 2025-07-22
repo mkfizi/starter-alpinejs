@@ -18,14 +18,14 @@
 		<meta property="og:title" content="Starter AlpineJS">
 		<meta property="og:image" content="path/to/img/meta-og.jpg">
 		<meta property="og:description" content="Boilerplate for AlpineJS and TailwindCSS projects.">
-		<meta property="og:site_name" content="Starter HTML">
+		<meta property="og:site_name" content="Starter AlpineJS">
 		<!-- END Facebook Open Graph -->
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@mkfizi">
 		<meta name="twitter:creator" content="@mkfizi">
 		<meta name="twitter:url" content="https://mkfizi.dev">
-		<meta name="twitter:title" content="Starter HTML">
+		<meta name="twitter:title" content="Starter AlpineJS">
 		<meta name="twitter:description" content="Boilerplate for AlpineJS and TailwindCSS projects.">
 		<meta name="twitter:image" content="path/to/img/meta-card.jpg">
 		<!-- END Twitter Card -->
@@ -33,18 +33,25 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="icon" href="./favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-		<link rel="manifest" href="/site.webmanifest">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="manifest" href="/manifest.json">
 		<!-- END Favicon -->
 		<!-- Style-->
-		<link rel="preload" href="./src/css/index.css" as="style">
-		<link rel="stylesheet" href="./src/css/index.css">
+		<link rel="preload" href="/css/app.css" as="style">
+		<link rel="stylesheet" href="/css/app.css">
 		<!-- END Style -->
 		<!-- Script -->
-		<link rel="preload" href="./src/js/index.js" as="script">
-		<script src="./src/js/index.js" type="module" defer></script>
+		<link rel="preload" href="/js/app.ts" as="script">
+		<script src="/js/app.ts" type="module" defer></script>
 		<!-- END Script -->
+		 <!-- Prevent FOUC -->
+        <script>
+            // Toggle theme.
+            // localStorage.theme = 'dark';
+            document.documentElement.classList.toggle('dark', localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches) || (localStorage.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches));
+        </script>
+        <!-- END Prevent FOUC -->
 		<title>Starter AlpineJS</title>
 	</head>
 	<body class="relative min-h-dvh antialiased">

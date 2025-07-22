@@ -1,25 +1,21 @@
 {
 	"name": "@mkfizi/starter-alpinejs",
+	"private": true,
 	"version": "0.1.0",
 	"description": "Boilerplate for AlpineJS and TailwindCSS projects.",
-	"keywords": [
-		"Tailwindcss",
-		"AlpineJS",
-		"Starter Kit",
-		"Boilerplate"
-	],
-	"license": "MIT",
-	"author": "@mkfizi",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "tsc && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.11",
+		"@types/alpinejs": "^3.13.11",
 		"alpinejs": "^3.14.9",
+		"glob": "^11.0.3",
 		"tailwindcss": "^4.1.11",
-		"vite": "^7.0.5"
+		"typescript": "~5.8.3",
+		"vite": "^7.0.4"
 	}
 }

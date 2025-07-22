@@ -7,7 +7,7 @@ This barebone boilerplate serves as starting point when developing web applicati
 ## Installation
 Clone this repository to get started.
 
-Run the following command in project directory to install TailwindCSS dependencies.
+Run the following command in project directory to install dependencies.
 ```bash
 npm install
 ```
@@ -18,6 +18,8 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+> Note that Vite is configured to use `src` as the project root, and will dynamically build all `.html` files located inside the `src` directory.
 
 ## Contributing
 

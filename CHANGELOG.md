@@ -18,7 +18,16 @@ Types of changes:
 
 Put unreleased changes here.
 
-## [0.2.0] - 2024-03-09
+
+## [0.3.0] - 2025-07-22
+### Added
+- Typescript support.
+
+### Changed
+- Revise to a modern directory structure.
+- Revise Vite config to support dynamic build entries.
+
+## [0.2.0] - 2025-03-09
 ### Added
 - Include sample code in `index.js`.
 
