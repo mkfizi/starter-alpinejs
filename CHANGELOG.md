@@ -18,7 +18,6 @@ Types of changes:
 
 Put unreleased changes here.
 
-
 ## [0.3.0] - 2025-07-22
 ### Added
 - Typescript support.
