@@ -1,6 +1,4 @@
 import Alpine from 'alpinejs';
-
-window.Alpine = Alpine
  
 Alpine.data('app', () => ({
     init() {
@@ -8,5 +6,6 @@ Alpine.data('app', () => ({
     } 
 }))
 
+window.Alpine = Alpine;
 Alpine.start()
 
