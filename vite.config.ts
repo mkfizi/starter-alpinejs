@@ -6,6 +6,7 @@ import { glob } from 'glob';
 export default defineConfig({
     base: '/starter-alpinejs/',
     root: './src',
+    publicDir: '../public',
     build: {
         outDir: '../dist',
         emptyOutDir: true,
