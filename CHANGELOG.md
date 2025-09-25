@@ -18,6 +18,12 @@ Types of changes:
 
 Put unreleased changes here.
 
+## [0.3.1] - 2025-09-25
+### Changed
+- Update all dependancies.
+- Move FOUC script before CSS/JS.
+
+
 ## [0.3.0] - 2025-07-22
 ### Added
 - Typescript support.
