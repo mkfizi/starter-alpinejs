@@ -18,6 +18,13 @@ Types of changes:
 
 Put unreleased changes here.
 
+## [0.3.2] - 2025-10-13
+### Added
+- Add Vite configuration notes in `README.md`.
+
+### Changed
+- `package.json` content.
+
 ## [0.3.1] - 2025-09-25
 ### Changed
 - Update all dependancies.

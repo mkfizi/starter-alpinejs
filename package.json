@@ -1,8 +1,8 @@
 {
 	"name": "@mkfizi/starter-alpinejs",
-	"private": true,
-	"version": "0.3.1",
-	"description": "Boilerplate for AlpineJS and TailwindCSS projects.",
+	"version": "0.3.2",
+	"description": "Starter kit for AlpineJS and TailwindCSS projects.",
+	"license": "MIT",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
