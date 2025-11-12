@@ -24,7 +24,6 @@ npm run preview
 Vite has been preconfigured in `vite.config.ts` to optimize the development workflow for AlpineJS and TailwindCSS projects:
 ```typescript
 export default defineConfig({
-    base: '/starter-alpinejs/',
     root: './src',
     publicDir: '../public',
     build: {
@@ -40,7 +39,6 @@ export default defineConfig({
 })
 ```
 
-- `base: '/sitename/'` - Sets the base public path for deployment. Use this if the site will be hosted under a sub-path (e.g., https://example.com/sitename/).
 - `root: './src'` — Specifies that your source content (HTML, JS, CSS) is inside `src/`.
 - `publicDir: '../public'` — Points to the `../public` directory for static assets that should be built as-is.
 - `build.outDir: '../dist'` — Specifies the output directory `../dist` for production build.
