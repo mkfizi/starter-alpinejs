@@ -40,15 +40,15 @@ export default defineConfig({
 })
 ```
 
-- **`base`**: Sets the base public path for deployment, configured for GitHub Pages hosting
-- **`root`**: Defines the source directory as `./src` where your development files are located  
-- **`publicDir`**: Points to the `../public` directory for static assets that should be copied as-is
-- **`build.outDir`**: Specifies the output directory `../dist` for production builds
-- **`build.emptyOutDir`**: Automatically cleans the output directory before each build
-- **`rollupOptions.input`**: Uses glob pattern to automatically detect and build all HTML files in the src directory
-- **`plugins`**: Includes TailwindCSS plugin for processing utility classes during build
+- `base: '/sitename/'` - Sets the base public path for deployment. Use this if the site will be hosted under a sub-path (e.g., https://example.com/sitename/).
+- `root: './src'` — Specifies that your source content (HTML, JS, CSS) is inside `src/`.
+- `publicDir: '../public'` — Points to the `../public` directory for static assets that should be built as-is.
+- `build.outDir: '../dist'` — Specifies the output directory `../dist` for production build.
+- `build.emptyOutDir: true` — utomatically cleans the output directory before each build
+- `rollupOptions.input: glob.sync(resolve(__dirname, 'src/**/*.html'))` — Dynamically pick up all .html files in src/ as entry points (helpful for multi-page sites).
+- `plugins: [ tailwindcss() ]` — Includes TailwindCSS plugin for processing utility classes during development and production build.
 
-This configuration supports multi webpages by dynamically build all HTML files in `./src` into `./dist` and ensures proper asset handling in `./public`.
+This configuration supports multi webpages by dynamically build all HTML files in `src/` into `dist/` and ensures proper asset handling in `public/`.
 
 ## Contributing
 
